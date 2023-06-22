@@ -10,7 +10,7 @@ Menu, Tray, Tip, RDP Hotkey Helper
 Menu, Tray, NoStandard
 Menu, Tray, Add, Exit
 
-global RdpWindowTitle := % (SubStr(A_Language, -1) = "07" ? " - Remotedesktop" : " - Remote Desktop") ; matches both classic RDP client and the app from the Microsoft store
+global RdpWindowTitle := % " - 远程桌面连接" ;
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
 While true {
